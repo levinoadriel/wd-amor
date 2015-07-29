@@ -1,0 +1,65 @@
+<!--RSVP-->
+<div id="rsvp">
+  <div class="container">
+    <div class="rsvp-text">
+      <h2>Are you attending?</h2>
+      <p>Please confirm your presence to the event until the 1st of May 2015. Thank you!</p>
+    </div>
+  </div><!--end container-->
+</div><!--end #rsvp-->
+<!--END RSVP-->
+
+<div class="" id="guestbook"></div>
+
+
+
+<!--FORM-->
+<div id="form">
+  <div class="container">
+    <h3>RSVP</h3>
+    <div class="heart content-style"></div>
+
+    <div class="row">
+      <div class="col-md-3 rsvp-image"><img src="images/rsvp-left.png" alt="rsvp" /></div><!--end col-md-3-->
+      <div class="col-md-6">
+        <div class="contact-form">
+          <form method="POST" id="contact-form" class="form-horizontal" action="http://designwp.com/amor/contact-form.php" onSubmit="alert('Thank you for your feedback!');">
+            <div class="form-group">
+              <label>Name</label>
+              <input class="form-control" type="text" name="name" required/>
+            </div>
+            
+            <div class="form-group">
+              <label>Email</label>
+              <input class="form-control" name="email" type="text" required/>
+            </div>
+            
+            <div class="form-group">
+              <label>Are you attending?</label><br />
+              <input id="radio_1" type="radio" name="radio_group" value="yes">
+              <label class="attending-text" for="radio_1">Yes, I am attending</label>
+              <input id="radio_2" type="radio" name="radio_group" value="no">
+              <label class="attending-text" for="radio_2">No, I am not attending</label>
+            </div>
+            
+            <div class="form-group">
+              <label>Message</label>
+              <textarea class="form-control" name="message" rows="6" maxlength="1024" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-lg-offset-2 col-lg-10">
+                <button class="btn btn-default" type="reset" >Reset</button>
+                <input type="hidden" name="save" value="contact-form">
+                <button class="btn btn-success" id="submit" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div><!--end contact-form-->
+      </div><!--end col-md-6-->
+      <div class="col-md-3 rsvp-image"><img src="images/rsvp-right.png" alt="rsvp" /></div><!--end col-md-3-->
+    </div><!--end row-->
+
+  </div><!--end container-->
+</div><!--end #form-->
+<!--END FORM-->
